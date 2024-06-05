@@ -1,19 +1,35 @@
-import React, { useState } from 'react'
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 
-import './App.css'
+//Pages 
+import Home from "./Pages/Home.jsx";
+import Contact from "./Pages/Contact.jsx";
+import Blogs from "./Pages/Blogs.jsx";
+import Error from "./Pages/Error.jsx";
 
+import Navbar from "./Components/Navbar.jsx";
+import './App.css';
 function App() {
   
 
   return (
     <>
       <div>
-        
+      <BrowserRouter>  
+         <Navbar />
+      <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/Contact" element={<Contact />}/>
+          <Route path="/Blogs" element={<Blogs />}/>
+          <Route path="*" element={<Error />}/>
+      </Routes>
+    </BrowserRouter>
       </div>
-      <h1>Vite + React</h1>
       
     </>
   )
 }
+
+// /home -> <Home />
+// /contact -> <Contact />
 
 export default App

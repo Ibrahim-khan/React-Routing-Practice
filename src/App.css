@@ -40,3 +40,26 @@
 .read-the-docs {
   color: #888;
 }
+
+nav {
+  height: 10vh;
+  background-color: #282c34;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: white;
+  margin: 1rem;
+  text-decoration: none;
+}
+
+.nav-link:hover{
+  background-color: orange;
+}
+
+nav .active{
+  color:red;
+}
