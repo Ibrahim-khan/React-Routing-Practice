@@ -64,3 +64,18 @@ function App() {
 // /contact -> <Contact />
 
 export default App
+
+
+
+//Best practice for the react project structure
+
+// 1. Create Route folder . Onlt access route folder from app.jsx
+// 2. Create pages folder.
+// 3. Create different types of folder for different pages.
+//    Example: Create home folder for home page, About folder for about page etc 
+// 4. Create components folder for Components, card or other. 
+// 5. Create assets folder for images, style 
+// 6. Create Layout for Header, footer and common data for all pages. 
+// 7. Middleware folder for Redux
+// 8. Services folder for actions, consists, reducer
+// 9. Create Utilities folder for Date, number
